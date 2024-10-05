@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 130px;
+    width: 100%;
+    height: 64px;
+    background: #4E5BA6;
+    color: #FFFFFF; 
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    color: #4E5BA6;
+
+}
+input, button{
+    border-radius: 4px;
+    border:  1px solid #B4B4B4;
+}
+
+#main-contents{
+    border: 1px solid #0000001F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    margin-bottom: 77px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#main-contents span{
+    margin-top: 52px;
+    width: 382px;
+}
+
+#input-amount{
+    margin-top: 26px;
+}
+
+#input-amount input{
+    height: 36px;
+    width: 290px;
+}
+#input-amount button{
+    height: 36px;
+    width: 56px;
+    margin-left: 10px;
+    text-align: center;
+    background: #4E5BA6;
+    color: #FFFFFF;
+}
+
+#lottos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#lottos span{
+    margin-top: 18px;
+}
+
+#lottos ul{
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+}
+#lottos li{
+    padding: 5px;
+}
+#winning-lotto{
+    width: 100%;
+    margin-top: 24px;
+}
+#winning-lotto input{
+    width: 34px;
+    height: 36px;
+}
+#winning-lotto form{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bonus-num{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#result-button{
+    width: 100%;
+    margin-top: 27px;
+    margin-bottom: 32px;
+}
+#result-button button{
+    background: #4E5BA6;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    height: 36px;
+}
+
+
+
+.title{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    
+}
+.subtitle{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: center;
+
+}
+.body{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+
+}
+.caption{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-align: left;
+}
