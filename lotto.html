@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -30,16 +30,8 @@
                     <button class="caption" type="submit">구입</button>
             </form>
         </div>
-        <script>
-            let form = document.getElementById('amount-form');
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                let amount = document.getElementById('target').value;
-                alert('입력한 금액: ' + amount);
-            });
-        </script>
 
-        <div id="lottos">
+        <div id="lottos">   
             <span class="body">총 7개를 구매하였습니다.</span>
             <ul class="body">
                 <li><span style="font-size: 34px;">🎟️</span>12, 28, 22, 37, 19, 23</li>
@@ -78,6 +70,52 @@
         <div id="result-button">
             <button class="caption" type="submit">결과 확인하기</button>
         </div>
+        
+
+        <div id="result-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">X</span>
+                <h2>🏆 당첨 통계 🏆</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>일치 갯수</th>
+                            <th>당첨금</th>
+                            <th>당첨 갯수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3개</td>
+                            <td>5,000</td>
+                            <td id="match-3">0개</td>
+                        </tr>
+                        <tr>
+                            <td>4개</td>
+                            <td>50,000</td>
+                            <td id="match-4">0개</td>
+                        </tr>
+                        <tr>
+                            <td>5개</td>
+                            <td>1,500,000</td>
+                            <td id="match-5">0개</td>
+                        </tr>
+                        <tr>
+                            <td>5개+보너스볼</td>
+                            <td>30,000,000</td>
+                            <td id="match-5-bonus">0개</td>
+                        </tr>
+                        <tr>
+                            <td>6개</td>
+                            <td>2,000,000,000</td>
+                            <td id="match-6">0개</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="total-rate">당신의 총 수익률은 %입니다.</p>
+                <button id="restart-button">다시 시작하기</button>
+            </div>
+        </div>
 
     </main>
 
@@ -85,6 +123,7 @@
     <footer>
         <span class="caption">Copyright 2023. woowacourse</span>
     </footer>
+    <script src="lotto.js"></script>
 </body>
 
-</html> -->
+</html>
